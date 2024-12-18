@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/img/115690235.webp" type="image/png" />
+    <title>Chill guy - Please cheer up</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000">
+      <select id="languageSelector" class="language-selector">
+        <option value="en">English</option>
+        <option value="tr">Türkçe</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="si">සිංහල</option>
+      </select>
+    </div>
+    <div class="background-pattern" id="backgroundPattern"></div>
+    <div class="audio-visualization" id="audioVisualization">
+      <div class="wave"></div>
+      <div class="wave" style="animation-delay: -1s"></div>
+      <div class="wave" style="animation-delay: -2s"></div>
+      <div class="wave" style="animation-delay: -3s"></div>
+    </div>
+    <div class="container" id="mainContainer">
+      <h1 class="title">Chill Guy</h1>
+      <p class="mood-text sad" id="moodText">
+        Chill Guy is feeling sad... Play some music to cheer him up!
+      </p>
+      <img
+        src="res/img/images (14).jpeg"
+        alt="Chill Guy"
+        class="artwork"
+        id="chillGuy"
+      />
+      <div class="controls">
+        <audio
+          id="music"
+          src="res/music/Gia Margaret - Hinoki Wood (Official Video).mp3"
+        ></audio>
+        <button class="play-btn" onclick="togglePlay()">Play Music</button>
+      </div>
+    </div>
+    <div class="deep-thoughts" id="deepThoughts"></div>
+    <div class="modal" id="feedbackModal">
+      <div class="modal-content">
+        <h2>Are you relieved?</h2>
+        <div class="modal-buttons">
+          <button class="modal-btn" onclick="handleFeedback('yes')">Yes</button>
+          <button class="modal-btn" onclick="handleFeedback('no')">No</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="responseModal">
+      <div class="modal-content">
+        <p class="relaxation-tips" id="responseText"></p>
+        <button class="modal-btn" onclick="closeResponseModal()">OK</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
