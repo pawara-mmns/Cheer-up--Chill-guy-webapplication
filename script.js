@@ -333,7 +333,7 @@ function togglePlay() {
     audio.play();
     playBtn.textContent = getTranslation("playingButton");
     chillGuy.src =
-      "/res/img/MmJhNjg4YgwrCjhZSE9vGWhSbAMOFmFPP0p0SEgFf1V6EGEMDlgoHy8YIUQARjgdKx8-RBdYYgw6AWEcVhspBDkYIgseGygAKA0qRVdXfQwrXH9eSlB5XX1Fel5QBWBVcg16R1QFeF8oCXhSXw14C2gV.webp";
+      "/res/img/images.jpeg";
     chillGuy.classList.add("happy");
     moodText.classList.remove("sad");
     moodText.classList.add("happy");
